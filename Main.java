@@ -1,15 +1,26 @@
+import java.util.Scanner;
+
 /**
- *
- * @author 
+ * This program will convert the temperature in degrees Celsius into degrees Fahrenheit
+ * @David
  */
 public class Main {
 
-  /**
-   * The method that is executed when you hit the run button.
-   * @param args the command line arguments
+ /**
+  /* The method that is executed when you hit the run button.
+   *@param arges the comand line arguments
    */
-  public static void main(String[] args) {
-    // TODO code application logic here
-    
+  public static void main(String[] args ) {
+    // create a Scanner for user input
+    Scanner input = new Scanner(System.in);
+
+    //asks user for the tempC
+    System.out.println("Please enter a temperature you would like to convert in degrees Celsius");
+    // declare and initialize the temperature in Celsius
+    int tempC = input.nextInt();
+   
+    // converts tempC to tempF
+    int tempF = (tempC * 9) / 5 + 32;
+    System.out.println(tempC + "C is the as " + tempF + "F");
   }
-}
+}   
